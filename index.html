@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NetDex</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body class="bg-light">
+    <div id="app" class="container-fluid px-0 overflow-hidden">
+      <div class="row">
+        <div class="col-12">
+          <header class="head-banner text-white text-center mb-1"></header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar-fixed-top">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item navbar-fixed-top col-6 col-md-3 mx-2">
+                  <router-link class="nav-link active link-primary bg-warning mt-2  text-center"  to="/">Home</router-link>
+                </li>
+                <li class="nav-item col-6 col-md-3 mx-2">
+                  <router-link class="nav-link active link-warning mt-2 text-center" to="/API">API</router-link>
+                </li>
+                <li class="nav-item col-6 col-md-3 mx-2">
+                  <router-link class="nav-link active link-primary bg-warning mt-2  text-center" to="/Json">Pokedex</router-link>
+                </li>
+                <li class="nav-item col-6 col-md-3 mx-2">
+                  <router-link class="nav-link active link-warning mt-2  text-center" to="/ModificaDati">ModificaDati</router-link>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+      <button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top" value="torna-su-pagina" aria-label="torna-su-pagina"><i class="fas fa-arrow-up"></i></button>
+
+      <router-view></router-view>
+      
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/vue@3"></script>
+      <script src="https://unpkg.com/vue-router@4"></script>
+      <script src="script.js"></script>
+    
+  </body>
+</html>

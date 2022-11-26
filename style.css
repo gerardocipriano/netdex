@@ -1,0 +1,51 @@
+.head-banner{
+    background-color: black;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-image: url(images/websocket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.titolows{
+    color: #ff8000;
+}
+
+p.comment{
+    color: green;
+}
+
+p.code{
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+}
+
+p {
+    color: black;
+}
+
+ul.form{
+    list-style-type:none;
+}
+
+@media  screen and (min-width: 768px){
+    .head-banner{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(images/top.png);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: none;
+  }
